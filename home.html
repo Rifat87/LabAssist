@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LabAssist:Lab Management System</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/home.css">
+
+    <!--   REMIXICON CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--  ANIMATE on Scroll CDN link   -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+    <!-- Font Awesome Icon CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="h-nav">
+            <div class="h-nav-div">
+                <h2 class="h-nav-div-h2">LabAssist</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <button class="nav-menu-close-btn" id="nav-menu-close-btn">
+                    <i class="ri-close-fill"></i>
+                  </button>
+
+                  <ul class="nav-menu-list">
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link">Home</a></li>
+                    <li class="nav-menu-item"><a href="#features" class="nav-menu-link">Features</a></li>
+                    <li class="nav-menu-item"><a href="#contact" class="nav-menu-link">Contact</a></li>
+                    <li class="nav-menu-item"><button class="nav-menu-link" id="home-login-btn">Sign up/Log in</button></li>
+                  </ul>
+            </div>
+            <button class="nav-menu-toggle-btn" id="toggle-btn">
+                <i class="ri-menu-line"></i>
+              </button>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <div class="login-section container animate" id="login-section">
+        <button><i class="fa fa-close close-btn" id="close-btn" style="font-size: 30px;"></i></button>
+    
+        <div class="main" id="main-div">
+            <input type="checkbox" id="chk" aria-hidden="true">
+                <!-- Sign Up form -->
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="txt" placeholder="User name" required=""> 
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="Password" name="pswd" placeholder="Password" required="">
+                        <button class="form-btn">Sign up</button>
+                    </form>
+                </div>
+                <!-- Login Form -->
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Enter email" required="">
+                        <input type="Password" name="pswd" placeholder="Enter password" required="">
+                        <button class="form-btn">Login</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <div class="w-div container">
+            <div class="w-div-div grid-cols-2">
+
+                <!-- Text item to the left -->
+                <div class="w-div-div-div grid-item-1">
+                    <h1 class="main-heading">Welcome to <span>LabAssist</span>
+                    <br><span id="main-heading-p2">Lab Management System</span>
+                    </h1>
+                    <p class="wrapper-info-text">
+                        A beautiful, user-friendly website that makes usage of IoT Lab more automated and flexible.
+                    </p>
+                    <div class="wrapper-btn">
+                        <button class="btn get-started-btn" onclick="gotoprofile()">
+                            Get Started <i class="ri-arrow-right-line"></i>
+                          </button>
+                          <button class="btn documentation-btn">documentation</button>
+                    </div>
+                </div>
+
+                <!-- Images to the right side -->
+                <div class="grid-item-2">
+                    <div class="wrapper-project-img">
+                      <img src="images/team.svg" alt="team-img"/>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="wrapper"  id="features">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="grid-cols-4">
+                <div class="grid-cols-item">
+                    <div class="grid-icon">
+                        <i class="fa fa-address-card" style="font-size:48px;color:rgb(0, 75, 161)"></i>
+                    </div>
+                    <div class="featured-info">
+                        <span>User Management System</span>
+                        <p>One of the major feature is to introduce user authentication and login for the students, teachers and lab instructors. It will help to automate the access system in the laboratory.</p>
+                    </div>
+                </div>
+            
+                <div class="grid-cols-item">
+                    <div class="grid-icon">
+                        <i class="fa fa-cog fa-spin" style="font-size:48px;color:rgb(0, 75, 161)"></i>
+                    </div>
+                    <div class="featured-info">
+                        <span>Online Request & Approval</span>
+                        <p>The main feature of our project is a student can request for the equipments without being physically present. Teachers and admins can view and approve the request.</p>
+                    </div>
+                </div>
+                <div class="grid-cols-item">
+                    <div class="grid-icon">
+                        <i class="fa fa-clipboard" style="font-size:48px;color:rgb(0, 75, 161)"></i>
+                    </div>
+                    <div class="featured-info">
+                        <span>Fully Digitalized System</span>
+                        <p>This web application can help to reduce the use of hand-written paper documents. It introduces digital document that keeps the records of the instruments usage by the students. </p>
+                    </div>
+                </div>
+                <div class="grid-cols-item">
+                    <div class="grid-icon">
+                        <i class="fa fa-address-card" style="font-size:48px;color:rgb(255, 0, 0)"></i>
+                    </div>
+                    <div class="featured-info">
+                        <span>Features 4</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore in doloribus, obcaecati dolor vitae tempora odio, consectetur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h3>LabAssist: Lab Management System</h3>
+            <p>This site is developed for the use of education purpose. With the hard effort of 3 students from 3rd batch of IRE Department of BDU, the site is ready to serve its purpose. </p>
+        </div>
+        <div class="contact">
+            <p>Phone no: 01641578822</p>
+            <p>Email: 2001011@bdu.ac.bd</p>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 <a href="#">LabAssist</a> </p>
+        </div>
+    </footer>
+    
+    <!--  ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--  GSAP CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> 
+    <!--  JS File  -->
+    <script src="JS/home.js" defer></script>
+</body>
+</html>
