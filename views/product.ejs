@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/product.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="h-nav">
+      <div class="h-logo">
+        <h2>LabAssist</h2>
+      </div>
+      <div class="nav-menu">
+        <ul class="h-nav-list">
+          <li class="h-nav-item"><a class="h-nav-link home-link" href="./home.html">Home<i class="fa fa-home home-icon" style="font-size:25px;"></i></a></li>
+          <li class="h-nav-item"><a class="h-nav-link" href="./profile.html">Profile</a></li>
+          <li class="h-nav-item"><button class="h-nav-link" id="logout-btn">Log out<i class="fa fa-sign-out logout-icon"
+                style="font-size:30px;"></i></button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <div class="column left" id="side-nav">
+      <div class="left-info">
+        <h2>Prerequisite for getting instruments</h2>
+        <p>Please select your course:</p>
+        <div class="course">
+          <input type="radio" id="sensor" name="course" value="sensor">
+          <label for="sensor">Sensor Technology Lab</label><br>
+          <input type="radio" id="microcontroller" name="course" value="microcontroller">
+          <label for="microcontroller">Microcontroller Lab</label>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="column middle">
+      <div class="container" id="box-container">
+        <div class="box">
+          <div class="name-quantity">
+            <h3>Arduino UNO R3</h3>
+            <h4 id="item-quantity">35</h4>
+          </div>
+          <img src="images/items/arduino.jpg" alt="">
+
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>ESP32 Module</h3>
+            <h4 id="item-quantity">8</h4>
+          </div>
+          <img src="images/items/esp32.jpg" alt="">
+
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>ESP8266 Module</h3>
+            <h4 id="item-quantity">10</h4>
+          </div>
+          <img src="images/items/esp8266.jpg" alt="">
+
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>DC Gear Motor</h3>
+            <h4 id="item-quantity">16</h4>
+          </div>
+          <img src="images/items/gear.jpg" alt="">
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>IR Sensor</h3>
+            <h4 id="item-quantity">15</h4>
+          </div>
+          <img src="images/items/ir sensor.jpg" alt="">
+
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>Motor Driver</h3>
+            <h4 id="item-quantity">6</h4>
+          </div>
+          <img src="images/items/motor driver.jpg" alt="">
+
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+        </div>
+
+        <div class="box">
+          <div class="name-quantity">
+            <h3>Ultrasonic Sensor</h3>
+            <h4 id="item-quantity">30</h4>
+          </div>
+          <img src="images/items/ultrasonic.jpg" alt="">
+          <div class="quantity-spinner">
+            <button class="decrement">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="increment">+</button>
+          </div>
+          <button class="add-item-btn" id="add-item-btn">Add to List</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="column right">
+      <!-- data table showing here -->
+      <div>
+        <h1>Item Selection Table</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti ad expedita in dolore omnis distinctio
+          quaerat est numquam, consequuntur temporibus reprehenderit eius esse iste nobis culpa ipsum eaque nulla
+          mollitia
+          delectus sunt! Minus eius vero sapiente accusantium architecto, cum nesciunt quae amet ullam voluptas
+          repellendus
+          delectus iusto debitis. Laboriosam!</p>
+      </div>
+
+    </div>
+
+    <div class="pagination">
+
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <h3>LabAssist: Lab Management System</h3>
+      <p>This site is developed for the use of education purpose. With the hard effort of 3 students from 3rd batch of
+        IRE Department of BDU, the site is ready to serve its purpose. </p>
+    </div>
+    <div class="contact">
+      <p>Phone no: 01641578822</p>
+      <p>Email: 2001011@bdu.ac.bd</p>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 <a href="#">LabAssist</a> </p>
+    </div>
+  </footer>
+
+  <script src="JS/product.js"></script>
+</body>
+
+</html>

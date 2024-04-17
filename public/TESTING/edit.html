@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.edit-profile-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 270px;
+    width: 750px; /* Set width to 750px */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.edit-profile-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 60%; /* Adjusted width to fill the parent container */
+    max-width: 750px; /* Set maximum width to 750px */
+}
+
+
+.edit-profile-modal label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.edit-profile-modal input {
+    width: calc(100% - 130px);
+    margin-bottom: 10px;
+}
+
+#toggle-modal-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#toggle-modal-btn:focus {
+    outline: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <button id="toggle-modal-btn">Edit Profile</button>
+
+<section class="edit-profile-section" id="edit-profile-section">
+    <div class="edit-profile-modal">
+        <div class="edit-profile-area">
+            <button class="edit-close-btn" id="edit-close-btn">Close</button>
+            <form action="">
+                <h3>Edit Profile</h3>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your name" id="name">
+                
+                <label for="uname">Username</label>
+                <input type="text" name="uname" placeholder="User name" id="uname">
+                
+                <label for="uid">User ID</label>
+                <input type="text" name="uid" placeholder="University ID" id="uid">
+                
+                <label for="session">Session</label>
+                <input type="text" name="session" placeholder="Your session" id="session">
+                
+                <label for="dept">Department</label>
+                <input type="text" name="dept" placeholder="Your department" id="dept">
+                
+                <label for="phone-no">Phone no</label>
+                <input type="text" name="phone-no" placeholder="Your phone no" id="phone-no">
+                
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Your email address" id="email">
+                
+                
+            </form>
+            <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggleModalBtn = document.getElementById("toggle-modal-btn");
+    const editProfileSection = document.getElementById("edit-profile-section");
+    const editCloseBtn = document.getElementById("edit-close-btn");
+
+    toggleModalBtn.addEventListener("click", function () {
+        editProfileSection.style.display = "block";
+    });
+
+    editCloseBtn.addEventListener("click", function () {
+        editProfileSection.style.display = "none";
+    });
+});
+
+</script>
+</body>
+</html>

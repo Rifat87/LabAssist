@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="new-login.css">
+</head>
+
+<body>
+    <button class="home-login-btn" id="home-login-btn">Log in</button>
+    <button><i class="fa fa-close close-btn" id="close-btn" style="font-size:48px;color:red"></i></button>
+    
+
+    <div class="main animate" id="main-div">
+
+        <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="signup">
+
+                <form>
+    
+                    <label for="chk" aria-hidden="true">Sign up</label>
+    
+                    <input type="text" name="txt" placeholder="User name" required=""> <input type="email" name="email"
+                        placeholder="Email" required="">
+    
+                    <input type="Password" name="pswd" placeholder="Password" required="">
+    
+                    <button>Sign up</button>
+    
+                </form>
+    
+            </div>
+    
+            <div class="login">
+    
+                <form>
+    
+                    <label for="chk" aria-hidden="true">Login</label>
+    
+                    <input type="email" name="email" placeholder="Email" required="">
+    
+                    <input type="Password" name="pswd" placeholder="Password" required="">
+    
+                    <button>Login</button>
+    
+                </form>
+    
+            </div>
+        
+
+    </div>
+
+    <script>
+        const mainDiv = document.getElementById("main-div");
+        const loginBtn = document.getElementById("home-login-btn");
+        const closeBtn = document.getElementById("close-btn");
+    
+        loginBtn.addEventListener("click",()=>{
+            document.getElementById("close-btn").style.display="block";
+            document.getElementById("main-div").style.display="block";
+        });
+        closeBtn.addEventListener("click",()=>{
+            document.getElementById("close-btn").style.display="none";
+            document.getElementById("main-div").style.display="none";
+        })
+    </script>
+</body>
+
+</html>
